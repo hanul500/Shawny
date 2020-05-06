@@ -1,0 +1,246 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shawny`s Earth</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{%static 'css/open-iconic-bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'css/animate.css'%}">
+
+
+    <link rel="stylesheet" href="{%static 'css/aos.css'%}">
+
+    <link rel="stylesheet" href="{%static 'css/ionicons.min.css'%}">
+
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="{%static 'css/flaticon.css'%}">
+    <link rel="stylesheet" href="{%static 'css/icomoon.css'%}">
+    <link rel="stylesheet" href="{%static 'css/stylewall.css'%}">
+      
+  </head>
+  <body>
+
+    <div class="KW_progressContainer">
+      <div class="KW_progressBar">
+
+      </div>
+    </div>
+    <div class="page">
+    
+    <div id="colorlib-page">
+         <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="colorlib-navbar-brand">
+                <a class="colorlib-logo" href="/"><span class="logo-img" style="background-image: url({%static 'images/logo.png'%});"></span></a>
+              </div>
+                <nav class="nav">
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li class="now" ><a href="/wallpaper/">WALLPAPER</a></li>
+                    <li><a href="#">COLLECTION</a></li>
+                    <li><a href="#">GAME</a></li>
+                    <li><a href="#">EVE STORE</a></li>
+                </ul>
+            </div>
+                    </nav>
+                
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="ftco-section">
+        <div class="container mt-5">
+        	<div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <span>{{obj.upload_date|date:"M d, Y"}}</span>
+              <h2>{{obj.name}}</h2>
+              <div class="heartbeat"><button onClick="like_heart('{{obj.name}}')" class="fa fa-heart"></button><span id="like_counting">{{obj.heart}}</span></div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-14 run">
+                <img src="{{obj.main_image.url}}" alt="" class="img-fluid">
+              <div class="supporteddevice">
+              <h2>Supported Devices</h2><br>    
+              
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('iphone')"> Iphone</button>
+  <button class="btn" onclick="filterSelection('android')"> Android</button>
+  <button class="btn" onclick="filterSelection('tablet')"> Tablet</button>
+  <button class="btn" onclick="filterSelection('desktop')"> Desktop</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="rowy">
+  <div class="columny iphone">
+    <div class="contenty">
+      <img class="imgg" src="{%static 'images/iphone.png'%}" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+    </div>
+  </div>
+  <div class="columny iphone">
+    <div class="contenty">
+    <img class="imgg" src="{%static 'images/iphone.png'%}" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+    </div>
+  </div>
+  <div class="columny iphone">
+    <div class="contenty">
+      <img class="imgg" src="{%static 'images/iphone.png'%}" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+    </div>
+  </div>
+  <div class="columny android">
+    <div class="contenty">
+    <img class="imgg" src="{%static 'images/iphone.png'%}" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+    </div>
+  </div>
+    <div class="columny tablet">
+    <div class="contenty">
+    <img class="imgg" src="{%static 'images/iphone.png'%}" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+    </div>
+  </div>
+    <div class="columny desktop">
+    <div class="contenty">
+    <img class="imgg" src="{%static 'images/iphone.png'%}" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+    </div>
+  </div>
+  <div class="columny desktop">
+    <div class="contenty">
+    <img class="imgg" src="{%static 'images/iphone.png'%}" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+    </div>
+  </div>
+    <div class="columny desktop">
+    <div class="contenty">
+    <img class="imgg" src="{%static 'images/iphone.png'%}" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+	</div>
+              </div>
+              </div>
+        </div></section>
+          <footer class="footnote">
+          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;2020 All rights reserved | This template is made by <a href="#">Shawny</a> with <a href="https://colorlib.com" target="_blank" style="color:black">Colorlib</a>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></footer>
+      
+
+
+              
+
+      <!-- loader -->
+      <div id="ftco-loader" class="showasd fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+      </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("columny");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+function like_heart(obj_name){
+	console.log('asdasd')
+
+	$.ajax({
+		type: "POST",
+		url: '/wallpaper/like/',
+		data:{
+			'obj_name':obj_name,
+			'csrfmiddlewaretoken': '{{csrf_token}}',
+		},
+		datatype: 'json',
+		success:function(response){
+			$("#like_counting").replaceWith('<span id="like_counting">' + response.heart+'</span>');
+
+		},
+		//error: function(request, status, error){
+		//	alert(error);
+		//},
+	});
+
+}
+
+
+
+
+</script>
+    <script src="{%static 'js/jquery.min.js'%}"></script>
+    <script src="{%static 'js/jquery-migrate-3.0.1.min.js'%}"></script>
+    <script src="{%static 'js/popper.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/jquery.easing.1.3.js'%}"></script>
+    <script src="{%static 'js/jquery.waypoints.min.js'%}"></script>
+    <script src="{%static 'js/jquery.stellar.min.js'%}"></script>
+    <script src="{%static 'js/owl.carousel.min.js'%}"></script>
+    <script src="{%static 'js/jquery.magnific-popup.min.js'%}"></script>
+    <script src="{%static 'js/aos.js'%}"></script>
+    <script src="{%static 'js/jquery.animateNumber.min.js'%}"></script>
+    <script src="{%static 'js/scrollax.min.js'%}"></script>
+    <script src="{%static 'js/main.js'%}"></script>
+      
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
